@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Content Starter Kit — Generate Instagram Content with Claude AI</title>
+  <meta name="description" content="Install this AI content system once and generate hooks, carousels, captions and content ideas in minutes using Claude AI. One-time ₹49.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-logo">automation<span>byrahul</span></div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#pricing" class="nav-cta">Get Access — ₹49</a>
+    <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero section" id="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-badge reveal"><span class="dot"></span> Beginner Friendly</div>
+    <h1 class="reveal">Stop Struggling<br>With <span class="gradient-text">Content.</span></h1>
+    <p class="reveal">Install this AI content system once and generate hooks, carousels, captions and content ideas in minutes — using Claude AI.</p>
+    <div class="hero-btns reveal">
+      <a href="#pricing" class="btn-primary">Get Instant Access — ₹49</a>
+      <a href="#included" class="btn-secondary">See What's Included</a>
+    </div>
+    <div class="command-pills reveal">
+      <span class="pill">/build</span>
+      <span class="pill">/hook</span>
+      <span class="pill">/caption</span>
+      <span class="pill">/research</span>
+      <span class="pill">/critique</span>
+    </div>
+    <div class="hero-mock reveal">
+      <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+      <div class="mock-body">
+        <div class="mock-card">
+          <h4>🔥 Hook Generator</h4>
+          <p>3 viral hooks generated for "AI tools for creators"</p>
+          <span class="mock-tag">Ready</span>
+        </div>
+        <div class="mock-card">
+          <h4>📑 Carousel Builder</h4>
+          <p>10-slide carousel outline created with CTA slide</p>
+          <span class="mock-tag">Generated</span>
+        </div>
+        <div class="mock-card">
+          <h4>✍️ Caption Writer</h4>
+          <p>Engaging caption with hashtags and call-to-action</p>
+          <span class="mock-tag">Complete</span>
+        </div>
+        <div class="mock-card">
+          <h4>💡 Idea Engine</h4>
+          <p>15 content ideas aligned with your brand voice</p>
+          <span class="mock-tag">Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROBLEM ═══ -->
+<section class="section" id="problem">
+  <div class="container">
+    <span class="section-label reveal">The Problem</span>
+    <h2 class="section-title reveal">Most creators don't need more ideas.<br><span class="gradient-text">They need a system.</span></h2>
+    <div class="problem-grid">
+      <div class="glass-card problem-card reveal">
+        <div class="problem-icon">⏳</div>
+        <h3>Starting from scratch every post</h3>
+        <p>You open a blank doc, stare at the cursor, and waste hours trying to come up with something. Every single day. There's no structure, no system — just chaos and burnout.</p>
+      </div>
+      <div class="glass-card problem-card reveal">
+        <div class="problem-icon">🤖</div>
+        <h3>Generic AI outputs</h3>
+        <p>You paste a vague prompt into ChatGPT and get bland, cookie-cutter content that sounds like everyone else. No personality, no depth, no strategy — just filler text.</p>
+      </div>
+      <div class="glass-card problem-card reveal">
+        <div class="problem-icon">🎯</div>
+        <h3>Inconsistent branding</h3>
+        <p>Your posts feel disconnected. Different tone, different style, different message every time. Your audience can't recognize you — and that kills trust and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="section" id="features">
+  <div class="container">
+    <span class="section-label reveal">Capabilities</span>
+    <h2 class="section-title reveal">What This System <span class="gradient-text">Does</span></h2>
+    <p class="section-sub reveal">One system. Eight powerful content commands. Everything you need to create scroll-stopping content consistently.</p>
+    <div class="features-grid">
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">🔥</div>
+        <h3>Viral Hook Generator</h3>
+        <p>Generate scroll-stopping hooks that grab attention in the first 2 seconds.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">📑</div>
+        <h3>Carousel Builder</h3>
+        <p>Create structured 8-10 slide carousels with built-in engagement flow.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">✍️</div>
+        <h3>Caption Writer</h3>
+        <p>Write captions that convert — with hooks, storytelling, and strong CTAs.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">💡</div>
+        <h3>Content Idea Engine</h3>
+        <p>Never run out of ideas. Get 15+ niche-specific content ideas in seconds.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">🔄</div>
+        <h3>Repurposing System</h3>
+        <p>Turn one idea into 5+ formats — reels, stories, threads, and more.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">🔍</div>
+        <h3>Content Critique Tool</h3>
+        <p>Get AI-powered feedback on your drafts before you post.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">🧠</div>
+        <h3>Brand Memory Setup</h3>
+        <p>Claude remembers your brand voice, tone, and audience across every session.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="f-icon">🚀</div>
+        <h3>Beginner Friendly Setup</h3>
+        <p>Step-by-step guide. No coding, no prompt engineering, no tech skills needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="section" id="how">
+  <div class="container">
+    <span class="section-label reveal">Setup</span>
+    <h2 class="section-title reveal">How It <span class="gradient-text">Works</span></h2>
+    <p class="section-sub reveal">Get up and running in under 5 minutes. Four simple steps to your AI content system.</p>
+    <div class="timeline">
+      <div class="timeline-step reveal">
+        <div class="timeline-num">1</div>
+        <div class="timeline-content">
+          <h3>Create Claude Project</h3>
+          <p>Open Claude AI and create a new project. It takes 10 seconds — just click "New Project" and name it.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num">2</div>
+        <div class="timeline-content">
+          <h3>Paste System Prompt</h3>
+          <p>Copy the provided system prompt and paste it into your project settings. This is the brain of your content engine.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num">3</div>
+        <div class="timeline-content">
+          <h3>Upload Brand Config</h3>
+          <p>Upload your brand config file so Claude understands your voice, niche, audience, and content style.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num">4</div>
+        <div class="timeline-content">
+          <h3>Run Commands</h3>
+          <p>Start using commands like /hook, /build, /caption — and watch your content system come alive.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHAT'S INCLUDED ═══ -->
+<section class="section" id="included">
+  <div class="container">
+    <span class="section-label reveal">Inside The Kit</span>
+    <h2 class="section-title reveal">What's <span class="gradient-text">Included</span></h2>
+    <p class="section-sub reveal">Five carefully crafted files that transform Claude into your personal content strategist.</p>
+    <div class="included-grid">
+      <div class="file-card reveal">
+        <div class="file-name">📄 SYSTEM_PROMPT.md</div>
+        <p>The core brain of the system. Contains all the commands, rules, and intelligence that powers your AI content engine.</p>
+      </div>
+      <div class="file-card reveal">
+        <div class="file-name">📄 BRAND_CONFIG.md</div>
+        <p>Your brand's DNA. Define your voice, niche, audience, and style so every output feels authentically you.</p>
+      </div>
+      <div class="file-card reveal">
+        <div class="file-name">📄 COMMANDS.md</div>
+        <p>Complete reference for all available commands — from hooks to critiques — with examples and tips.</p>
+      </div>
+      <div class="file-card reveal">
+        <div class="file-name">📄 QUICK_START.md</div>
+        <p>Get set up in 5 minutes flat. Step-by-step walkthrough with screenshots for fast onboarding.</p>
+      </div>
+      <div class="file-card reveal">
+        <div class="file-name">📄 BEGINNER_GUIDE.md</div>
+        <p>Never used AI? No problem. This guide walks you through everything from scratch — zero tech skills needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMMAND SHOWCASE ═══ -->
+<section class="section" id="commands">
+  <div class="container">
+    <span class="section-label reveal">Live Demo</span>
+    <h2 class="section-title reveal">See The Commands <span class="gradient-text">In Action</span></h2>
+    <p class="section-sub reveal">Type a command. Get production-ready content. It's that simple.</p>
+    <div class="terminal reveal">
+      <div class="terminal-header">
+        <span class="mock-dot" style="width:8px;height:8px"></span>
+        <span class="mock-dot" style="width:8px;height:8px"></span>
+        <span class="mock-dot" style="width:8px;height:8px"></span>
+        <span>claude-ai-content-kit</span>
+      </div>
+      <div class="terminal-body">
+        <div class="term-line">
+          <span class="term-prompt">→ </span><span class="term-cmd">/build AI tools for creators</span>
+          <div class="term-output">✅ Generated 10-slide carousel: "7 AI Tools Every Creator Needs in 2025" with hook, CTA, and engagement slides.</div>
+        </div>
+        <div class="term-line">
+          <span class="term-prompt">→ </span><span class="term-cmd">/hook why creators fail</span>
+          <div class="term-output">🔥 "99% of creators fail because they create content. Top 1% build content systems." — Hook #1 of 5 generated.</div>
+        </div>
+        <div class="term-line">
+          <span class="term-prompt">→ </span><span class="term-cmd">/research personal branding</span>
+          <div class="term-output">📊 Deep research complete: 15 trending angles, 8 content gaps, and 5 viral frameworks identified.</div>
+        </div>
+        <div class="term-line">
+          <span class="term-prompt">→ </span><span class="term-cmd">/caption AI content strategy</span>
+          <div class="term-output">✍️ Caption generated with scroll-stopping hook, story framework, and conversion CTA. 280 words.</div>
+        </div>
+        <div class="term-line">
+          <span class="term-prompt">→ </span><span class="term-cmd">/critique</span>
+          <div class="term-output">🔍 Content score: 8.2/10 — Suggestions: Stronger opening hook, add data point in slide 3, improve CTA specificity.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BEGINNER FRIENDLY ═══ -->
+<section class="section" id="beginner">
+  <div class="container">
+    <span class="section-label reveal">Zero Learning Curve</span>
+    <h2 class="section-title reveal">Even if you've <span class="gradient-text">never used AI</span> before.</h2>
+    <p class="section-sub reveal">This kit was designed for creators, not engineers. Everything is copy-paste simple.</p>
+    <div class="beginner-grid">
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>5 Minute Setup</h4>
+            <p>From download to generating your first content piece — in under 5 minutes. We tested it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>No Coding Required</h4>
+            <p>Zero code, zero terminal, zero developer tools. If you can copy and paste, you can use this.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>No Prompt Engineering</h4>
+            <p>All prompts are pre-built and optimized. Just type the command and let Claude do the work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>Copy → Paste → Create</h4>
+            <p>The entire workflow is three steps. Copy the files, paste into Claude, start creating content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>Step-by-Step Guide</h4>
+            <p>Includes a dedicated beginner guide with screenshots and explanations for every single step.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="check-item">
+          <div class="check-icon">✓</div>
+          <div>
+            <h4>Works In Any Niche</h4>
+            <p>Tech, fitness, business, lifestyle, education — the brand config adapts to your specific niche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <span class="section-label reveal">Social Proof</span>
+    <h2 class="section-title reveal">Creators Love <span class="gradient-text">This Kit</span></h2>
+    <div class="testimonials-grid">
+      <div class="glass-card testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"This saved me hours every week. I used to spend 2-3 hours on a single carousel. Now I generate the entire thing in 10 minutes."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div class="author-info">
+            <div class="name">Arjun Mehta</div>
+            <div class="handle">@arjun.creates</div>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"The hook generator alone is worth it. I've been getting 3x more saves on my posts since I started using these hooks."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div class="author-info">
+            <div class="name">Sneha Kapoor</div>
+            <div class="handle">@sneha.digital</div>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Way better than random ChatGPT prompts. The brand memory feature means Claude actually sounds like me, not a robot."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div class="author-info">
+            <div class="name">Rohan Verma</div>
+            <div class="handle">@rohan.builds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="section" id="pricing">
+  <div class="container" style="text-align:center;">
+    <span class="section-label reveal">Pricing</span>
+    <h2 class="section-title reveal">One Kit. One Price. <span class="gradient-text">Forever Yours.</span></h2>
+    <div class="pricing-wrapper reveal">
+      <div class="pricing-card">
+        <div class="old-price">₹999</div>
+        <div class="price gradient-text">₹49</div>
+        <div class="price-sub">One-time payment · Instant delivery</div>
+        <ul class="pricing-features">
+          <li>Complete AI Content System</li>
+          <li>5 Ready-to-Use Files</li>
+          <li>8 Powerful Commands</li>
+          <li>Brand Memory Configuration</li>
+          <li>Beginner Guide Included</li>
+          <li>Works in Any Niche</li>
+          <li>No Subscription — Ever</li>
+          <li>Lifetime Access + Updates</li>
+        </ul>
+        <div class="razorpay-btn-wrap"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SnFAVWl4PBfO9S" async> </script> </form></div>
+        <div class="urgency">⚡ Low introductory pricing — will increase soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section" id="faq">
+  <div class="container">
+    <span class="section-label reveal">FAQ</span>
+    <h2 class="section-title reveal">Frequently Asked <span class="gradient-text">Questions</span></h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">Do I need Claude Pro? <span class="icon">+</span></button>
+        <div class="faq-a"><p>No! This works with Claude's free tier. Claude Pro gives you more messages per day, but the free version is enough to get started and see real results.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Is this beginner friendly? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Absolutely. This kit was built for creators who have never used AI before. The beginner guide walks you through every step with screenshots. If you can copy and paste, you can use this.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do I need coding skills? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Not at all. There is zero coding involved. You're simply copying files and pasting them into Claude's interface. It's like sending a message.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Is this a subscription? <span class="icon">+</span></button>
+        <div class="faq-a"><p>No. This is a one-time payment of ₹49. You get instant access to all files and future updates. No recurring charges, no hidden fees.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can I use this for any niche? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yes! The brand config file lets you define your specific niche, audience, and tone. Whether you're in tech, fitness, business, education, or lifestyle — the system adapts to you.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How fast is setup? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Under 5 minutes. Most people are generating their first piece of content within 3 minutes of downloading the kit.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta section">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <h2 class="reveal">Start Creating Better<br><span class="gradient-text">Content Today.</span></h2>
+    <p class="reveal">Install once. Create forever.</p>
+    <div class="razorpay-btn-wrap reveal"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SnFAVWl4PBfO9S" async> </script> </form></div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <a href="https://www.instagram.com/automationbyrahul/" target="_blank" rel="noopener" class="footer-ig">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      @automationbyrahul
+    </a>
+    <p>© 2026 AI Content Starter Kit. Built for creators who want to win.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
