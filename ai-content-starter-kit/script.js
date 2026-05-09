@@ -97,3 +97,24 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// ── Razorpay Modal Fix ──
+(function fixRazorpayModal() {
+  const obs = new MutationObserver(mutations => {
+    mutations.forEach(m => {
+      m.addedNodes.forEach(node => {
+        if (node.tagName === 'IFRAME' || (node.classList && node.classList.contains('razorpay-container'))) {
+          document.body.style.overflow = 'hidden';
+          node.style.position = 'fixed';
+          node.style.zIndex = '99999';
+        }
+      });
+      m.removedNodes.forEach(node => {
+        if (node.tagName === 'IFRAME' || (node.classList && node.classList.contains('razorpay-container'))) {
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  });
+  obs.observe(document.body, { childList: true, subtree: true });
+})();
