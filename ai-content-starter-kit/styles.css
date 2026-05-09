@@ -359,7 +359,7 @@ iframe.razorpay-checkout-frame {
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .nav-cta { display: none; }
+  .nav-cta { padding: 8px 16px; font-size: 13px; }
   .mobile-toggle { display: block; }
   .hero { padding: 160px 0 60px; }
   .mock-body { grid-template-columns: 1fr; }
