@@ -24,7 +24,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -62,10 +62,10 @@ body {
   transition: padding .3s, background .3s;
 }
 .navbar.scrolled { padding: 10px 0; background: rgba(11,11,15,0.92); }
-.navbar .container { display: flex; align-items: center; justify-content: space-between; }
-.nav-logo { font-size: 18px; font-weight: 800; letter-spacing: -0.5px; }
+.navbar .container { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
+.nav-logo { font-size: 18px; font-weight: 800; letter-spacing: -0.5px; white-space: nowrap; min-width: 0; flex-shrink: 0; }
 .nav-logo span { color: var(--accent); }
-.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links { display: flex; gap: 28px; list-style: none; flex-shrink: 1; min-width: 0; }
 .nav-links a {
   color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500;
   transition: color .25s;
@@ -75,6 +75,7 @@ body {
   padding: 10px 22px; border-radius: 50px; background: var(--accent); color: #fff;
   font-size: 14px; font-weight: 600; text-decoration: none;
   transition: box-shadow .3s, transform .2s; border: none; cursor: pointer;
+  flex-shrink: 0; white-space: nowrap;
 }
 .nav-cta:hover { box-shadow: 0 0 24px var(--glow); transform: translateY(-1px); }
 
@@ -318,45 +319,9 @@ body {
 .final-cta h2 { font-size: clamp(30px, 4.5vw, 48px); font-weight: 900; margin-bottom: 14px; letter-spacing: -1px; }
 .final-cta p { font-size: 17px; color: var(--text-muted); margin-bottom: 32px; }
 
-/* ── Razorpay Button & Modal Fix ── */
+/* ── Razorpay Button ── */
 .razorpay-btn-wrap { display: flex; justify-content: center; }
 .razorpay-btn-wrap form { display: inline-block; }
-
-/* Lock the page when Razorpay modal is open */
-body.razorpay-modal-open {
-  overflow: hidden !important;
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Force Razorpay's backdrop and iframe to cover viewport correctly */
-.razorpay-container,
-.razorpay-backdrop {
-  position: fixed !important;
-  top: 0 !important; left: 0 !important;
-  width: 100vw !important; height: 100vh !important;
-  max-width: 100vw !important; max-height: 100vh !important;
-  z-index: 999999 !important;
-  transform: none !important;
-}
-body > iframe[src*="razorpay"],
-iframe.razorpay-checkout-frame,
-.razorpay-checkout-frame {
-  position: fixed !important;
-  top: 0 !important; left: 0 !important;
-  width: 100vw !important; height: 100vh !important;
-  max-width: 100vw !important; max-height: 100vh !important;
-  z-index: 999999 !important;
-  border: none !important;
-  transform: none !important;
-}
 
 /* ── Footer ── */
 .footer { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
